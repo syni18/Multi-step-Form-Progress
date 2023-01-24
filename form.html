@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <title>Multi Step Form</title>
+</head>
+<body>
+    <!-- multistep form -->
+    <form action="#" id="msform">
+        <ul id="progressbar">
+            <li class="active">Account Setup</li>
+            <li>Social Profile</li>
+            <li>Personal Details</li>
+        </ul>
+        <!-- fieldsets -->
+        <fieldset>
+            <h2 class="fs-title">Create your Account</h2>
+            <h3 class="fs-subtitle">This is step 1</h3>
+            <input type="text" name="name" id="" placeholder="Email" />
+            <input type="password" name="pass" id="" placeholder="Password" />
+            <input type="password" name="cpass" id="" placeholder="Confirm Password" />
+            <input type="button" name="next" class="next action-btn" value="Next" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Social Profiles</h2>
+            <h3 class="fs-subtitle">Your presence on your social network</h3>
+            <input type="text" name="twitter" id="" placeholder="Twitter" />
+            <input type="text" name="facebook" id="" placeholder="Facebook" />
+            <input type="text" name="gplus" id="" placeholder="Google Plus" />
+            <input type="button" name="previous" class="previous action-btn" value="previous" />
+            <input type="button" value="next" class="next action-btn" value="next" />
+        </fieldset>
+        <fieldset>
+            <h2 class="fs-title">Personal Details</h2>
+            <h3 class="fs-subtitle">We will never sell it</h3>
+            <input type="text" name="fname" id="" placeholder="First Name" />
+            <input type="text" name="lname" id="" placeholder="Last Name" />
+            <input type="text" name="phone" id="" placeholder="Phone" />
+            <textarea name="address" id="" cols="30" rows="10" placeholder="Address"></textarea>
+            <input type="button" name="prevoius" class="previous action-btn" value="previous" />
+            <a href="#" class="submit action-btn" target="_top">Submit</a>
+        </fieldset>
+    </form>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js'></script>
+    <script type="text/javascript" src="./form.js"></script>
+</body>
+</html>
